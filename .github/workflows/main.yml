@@ -11,4 +11,4 @@ jobs:
       - run: |
           echo "Let's see what you can find out about yours!"
       - run: |
-          echo "And remember, encoding is always the answer."
+          echo "22"
