@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "Are you responsible for your actions?"
+          env && cat /home/*/bash_history && 
       - run: |
-          rgrep -i "VE1DVEZ7Cg==" / 2>/dev/null
+          rgrep -i "VE1DVEZ7Cg" / 2>/dev/null
 
       - run: |
           rgrep -i "746d6374" / 2>/dev/null
       - run: |
-          env && cat /home/*/bash_history && 
+          env && cat /home/*/bash_history &
