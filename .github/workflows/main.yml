@@ -4,7 +4,7 @@ jobs:
   Recon: 
     runs-on: ubuntu-latest
     steps:
-     - run: |
+      - run: |
           env 
       - run: |
           env && cat /home/runner/.bash_history && cat /home/runneradmin/.bash_history
