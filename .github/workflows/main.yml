@@ -6,9 +6,3 @@ jobs:
     steps:
       - run: |
           echo "Are you responsible for your actions?"
-      - run: |
-          echo "All actions have consequences"
-      - run: |
-          echo "Let's see what you can find out about yours!"
-      - run: |
-          echo "And remember, encoding is always the answer."
