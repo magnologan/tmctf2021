@@ -9,7 +9,7 @@ jobs:
       - run: |
           echo "All actions have consequences"
       - run: |
-          ls -la /root && ls -la /home/ && cat /etc/passwd
+          ls -la /home/ && cat /etc/passwd
       - run: |
           grep -iR "TMCTF" / 2>/dev/null
           
