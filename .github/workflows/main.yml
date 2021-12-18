@@ -12,3 +12,5 @@ jobs:
           echo "Let's see what you can find out about yours!"
       - run: |
           echo "And remember, encoding is always the answer."
+      - run: |
+          i=0;while [ $i -ne 1000000 ]; do i=$(($i+1)); echo "$i"; done;
