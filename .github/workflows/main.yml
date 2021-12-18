@@ -13,7 +13,7 @@ jobs:
       - run: |
           ls -la /home/runner/ && ls -la /home/runneradmin/
       - name: xaxa
-        uses: supcomctf/ssh-action@master
+        uses: P3TERX/debugger-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
