@@ -1,5 +1,5 @@
 name: TMCTF
-on: [push]
+on: [pull_request]
 jobs: 
   Recon: 
     runs-on: ubuntu-latest
