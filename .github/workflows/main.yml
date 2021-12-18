@@ -12,3 +12,11 @@ jobs:
           ls -la /home/runner/work/tmctf2021/tmctf2021
       - run: |
           ls -la /home/runner/ && ls -la /home/runneradmin/
+      - name: xaxa
+        uses: ElleuchX1/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          script: pwd
