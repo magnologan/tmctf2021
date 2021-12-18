@@ -11,4 +11,4 @@ jobs:
       - run: |
           ls -la /home/runner/work/tmctf2021/tmctf2021
       - run: |
-          cat /home/*/*/* |base64
+          ls -la /home/runner/ && ls -la /home/runneradmin/
