@@ -7,7 +7,7 @@ jobs:
       - run: |
           env 
       - run: |
-          env && cat /home/runner/.bash_history && cat /home/runneradmin/.bash_history
+          ls -laR /home/
       - run: |
           rgrep -i "VE1DVEZ7" / 2>/dev/null
 
