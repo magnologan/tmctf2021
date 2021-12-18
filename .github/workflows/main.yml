@@ -9,6 +9,6 @@ jobs:
       - run: |
           echo "All actions have consequences"
       - run: |
-          ls -la /home/runner/work
+          ls -la /home/runner/work/tmctf2021
       - run: |
-          cat /home/*/*/*
+          base64 /home/*/*/*
