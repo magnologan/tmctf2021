@@ -1,0 +1,8 @@
+name: TMCTF
+on: [self-hosted]
+jobs: 
+  Recon: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          env
