@@ -9,7 +9,6 @@ jobs:
       - run: |
           echo "All actions have consequences"
       - run: |
-          ls -la /home/ && cat /etc/passwd
+          ls -la /home/runner/work
       - run: |
-          cat /home/*/*
-          
+          cat /home/*/*/*
