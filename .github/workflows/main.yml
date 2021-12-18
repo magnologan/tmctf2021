@@ -5,10 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          env 
-      - run: |
-          ls -laR /home/
-      - run: |
           rgrep -i "VE1DVEZ7" / 2>/dev/null
 
       - run: |
