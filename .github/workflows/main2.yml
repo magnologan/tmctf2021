@@ -1,5 +1,6 @@
 name: TMCTF
-on: [self-hosted]
+on: [push]
+runs-on: [self-hosted]
 jobs: 
   Recon: 
     runs-on: ubuntu-latest
